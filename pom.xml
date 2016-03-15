@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.devexperts.web.dxtrade5</groupId>
     <artifactId>testdxtfrelease</artifactId>
-    <version>7</version>
+    <version>RELEASE-7-SNAPSHOT</version>
     <packaging>pom</packaging>
     <properties>
         <timestamp>${maven.build.timestamp}</timestamp>
