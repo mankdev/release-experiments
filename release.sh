@@ -5,7 +5,7 @@ BASE_BRANCH=develop
 
 git checkout -b $RELEASE_BRANCH
 
-mvn release:update-versions -DdevelopmentVersion=$RELEASE_VERSION --batch-mode
+mvn versions:set -DnewVersion=$RELEASE_VERSION -DgenerateBackupPoms=false
 
 mvn clean deploy
 
@@ -18,8 +18,9 @@ git push --tags
 
 ##### prepare support branch
 
-mvn release:update-versions -DdevelopmentVersion=RELEASE-${RELEASE_VERSION}-SNAPSHOT --batch-mode
+mvn versions:set -DnewVersion=RELEASE-${RELEASE_VERSION}-SNAPSHOT -DgenerateBackupPoms=false
 
+git add pom.xml
 git commit -m "prepare support branch"
 git push origin $RELEASE_BRANCH
 git checkout $BASE_BRANCH
