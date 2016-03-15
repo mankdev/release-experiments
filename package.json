@@ -1,0 +1,20 @@
+{
+  "name": "release-experiments",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mankdev/release-experiments.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mankdev/release-experiments/issues"
+  },
+  "homepage": "https://github.com/mankdev/release-experiments#readme"
+}
