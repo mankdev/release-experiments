@@ -25,5 +25,7 @@ git commit -m "prepare support branch"
 git push origin $RELEASE_BRANCH
 git checkout $BASE_BRANCH
 
-git merge -s ours refs/heads/$RELEASE_BRANCH
+git merge -s ours $RELEASE_BRANCH && \
+
+git push origin $BASE_BRANCH
 
